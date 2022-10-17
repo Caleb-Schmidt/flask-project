@@ -24,4 +24,6 @@ url = f"https://pokeapi.co/api/v2/pokemon/{pokemon}"
 response = requests.get(url)
 
 poke_call = PokemonAPI()
-print(poke_call.get_poke_info(pokemon))
+
+for item in poke_call.get_poke_info(pokemon):
+    print(item)
