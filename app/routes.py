@@ -3,9 +3,7 @@ import requests
 from .forms import *
 from flask_login import current_user
 from models import User
-from . import create_app
-
-app = create_app()
+from app import app
 
 @app.route('/')
 def homepage():
